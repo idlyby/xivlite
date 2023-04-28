@@ -1,0 +1,19 @@
+[package]
+name = "xivlite"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies.elpis]
+git = "https://github.com/idlyby/elpis.git"
+
+[dependencies]
+relm4 = { version = "0.6.0-alpha.2", features = ["macros", "libadwaita"] }
+gtk4 = { package = "gtk4", version = "0.6", features = ["v4_8"] }
+adw =  { package = "libadwaita", version = "0.3", features = ["v1_2"] }
+
+clap = { version = "4.2.1", features = ["derive"] }
+
+steamworks = "0.10.0"
+
+[build-dependencies]
+rustc_version = "0.4.0"
